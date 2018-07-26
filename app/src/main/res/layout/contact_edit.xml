@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_name"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelName"
+        android:layout_toRightOf="@id/labelName" />
+
+    <TextView
+        android:id="@+id/labelAddress"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:text="@string/label_address"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/textAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelAddress"
+        android:layout_below="@id/labelName"
+        android:layout_toRightOf="@id/labelAddress"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/labelMobile"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAddress"
+        android:text="Mobile #"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/textMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelMobile"
+        android:layout_below="@id/textAddress"
+        android:layout_toRightOf="@id/labelMobile"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/labelHome"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMobile"
+        android:text="Home #"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/textHome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelHome"
+        android:layout_below="@id/textMobile"
+        android:layout_toRightOf="@id/labelHome"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHome"
+        android:text="Save"
+        android:textSize="15sp" />
+</RelativeLayout>
